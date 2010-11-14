@@ -1,0 +1,24 @@
+RGB Lightsaber Project Roadmap:
+RGBSaber Control Board:
+1) RGBSaber_Control v1.6  (Standardized 0805 SMD parts, SMD Bulk Capacitor, Improved DC converter, Improved silkscreening)
+2) RGBSaber_Control v2.0  (Improved connectors, Modular Daughterboard System)
+
+RGBSaber Peripheral Board:
+1) RGBSaber_Periph v2.0   (Twin durable pushbuttons, SMD RGB Indicator)
+2) RGBSaber_Periph v3.0	  (Integrated Capacitive/Resistive Touch Sensing)
+
+RGBSaber Sound Driver:
+1) RGBSaber_Sound v1.0	  (Basic Operational Model, MicroSD card support)
+
+RGBSaber Transistor Driver Boards:
+1) RGBSaber_3W v1.0	   (Basic Operational Model)
+2) RGBSaber_5W v1.0	   (Basic Operational Model)
+3) RGBSaber_10W v1.0   (Basic Operational Model)
+
+RGBSaber Hilt Organization System:
+1) RGBSaber_Hilt v1.0  (Basic Operational Model)
+
+RGBSaber Firmware:
+1) Firmware v2.0 (C-code rewrite, digital indicator light dimming, improved control scheme)
+2) Firmware v3.0 (SoundFX, FlashFX, user-selectable/saveable colors, color quickselect, improved sleep mode)
+3) Firmware v4.0 (SDCard Wear Protection)

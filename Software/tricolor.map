@@ -1,0 +1,114 @@
+MPLINK 4.35, Linker
+Linker Map File - Created Fri Sep 17 01:00:08 2010
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000006
+                   .cinit    romdata   0x000006    program   0x000002
+                   .org_1       code   0x000008    program   0x00019c
+.config_300001_TRICOLOR_V2_6.O    romdata   0x300001    program   0x000001
+.config_300002_TRICOLOR_V2_6.O    romdata   0x300002    program   0x000001
+.config_300003_TRICOLOR_V2_6.O    romdata   0x300003    program   0x000001
+.config_300006_TRICOLOR_V2_6.O    romdata   0x300006    program   0x000001
+.config_300008_TRICOLOR_V2_6.O    romdata   0x300008    program   0x000001
+.config_300009_TRICOLOR_V2_6.O    romdata   0x300009    program   0x000001
+.config_30000A_TRICOLOR_V2_6.O    romdata   0x30000a    program   0x000001
+.config_30000B_TRICOLOR_V2_6.O    romdata   0x30000b    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0001a3      
+                            0x300001    0x300003      
+                            0x300006    0x300006      
+                            0x300008    0x30000b      
+            428 out of 4376 program addresses used, program memory utilization is 9%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               ADC_RETURN   0x000142    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                ADC_STORE   0x000136    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+            ADC_WAIT_LOOP   0x000132    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               END_TOGGLE   0x00010c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+           FLASH_INDICATE   0x00016a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+           INDICATE_COLOR   0x0000e2    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               INITIALIZE   0x000034    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               NO_COLORPB   0x000022    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              OUTPUT_BLUE   0x0001a0    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             OUTPUT_GREEN   0x00019c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               OUTPUT_PWM   0x00017e    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               OUTPUT_RED   0x000198    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+            OUTPUT_RETURN   0x000196    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                    POWER   0x00002c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               POWER_DOWN   0x0000a4    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                 POWER_UP   0x0000ca    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+          POWER_WAIT_LOOP   0x0000c4    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+          READ_COLOR_PORT   0x000130    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+     RGB_INDICATOR_DIMMER   0x0000f0    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SELECT_BLUE   0x000120    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             SELECT_GREEN   0x000116    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SELECT_LOCK   0x00012a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               SELECT_RED   0x000110    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SET_COLORPB   0x00001c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SHIFT_COLOR   0x000156    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             SHIFT_RETURN   0x000168    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                   START0   0x000076    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                   START1   0x00008a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               STORE_BLUE   0x000150    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              STORE_GREEN   0x00014a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                STORE_RED   0x000144    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                TEST_BLUE   0x00018e    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               TEST_GREEN   0x000186    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+            TMR0_OVERFLOW   0x000008    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              TMR0_RETURN   0x000032    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             TOGGLE_COLOR   0x0000fe    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+            TMR0_OVERFLOW   0x000008    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SET_COLORPB   0x00001c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               NO_COLORPB   0x000022    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                    POWER   0x00002c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              TMR0_RETURN   0x000032    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               INITIALIZE   0x000034    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                   START0   0x000076    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                   START1   0x00008a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               POWER_DOWN   0x0000a4    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+          POWER_WAIT_LOOP   0x0000c4    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                 POWER_UP   0x0000ca    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+           INDICATE_COLOR   0x0000e2    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+     RGB_INDICATOR_DIMMER   0x0000f0    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             TOGGLE_COLOR   0x0000fe    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               END_TOGGLE   0x00010c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               SELECT_RED   0x000110    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             SELECT_GREEN   0x000116    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SELECT_BLUE   0x000120    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SELECT_LOCK   0x00012a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+          READ_COLOR_PORT   0x000130    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+            ADC_WAIT_LOOP   0x000132    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                ADC_STORE   0x000136    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               ADC_RETURN   0x000142    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                STORE_RED   0x000144    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              STORE_GREEN   0x00014a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               STORE_BLUE   0x000150    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              SHIFT_COLOR   0x000156    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             SHIFT_RETURN   0x000168    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+           FLASH_INDICATE   0x00016a    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               OUTPUT_PWM   0x00017e    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               TEST_GREEN   0x000186    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+                TEST_BLUE   0x00018e    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+            OUTPUT_RETURN   0x000196    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+               OUTPUT_RED   0x000198    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+             OUTPUT_GREEN   0x00019c    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+              OUTPUT_BLUE   0x0001a0    program     static C:\Users\George\Documents\HW_Source\PIC18\Lightsaber\tricolor_v2_6.asm
+
+
