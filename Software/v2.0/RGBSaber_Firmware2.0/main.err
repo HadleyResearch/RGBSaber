@@ -1,1 +1,4 @@
-Warning[2058] main.c 20 : call of function without prototype
+Warning[2058] main.c 30 : call of function without prototype
+Warning[2058] main.c 33 : call of function without prototype
+Warning[2058] main.c 35 : call of function without prototype
+Warning[2058] main.c 36 : call of function without prototype

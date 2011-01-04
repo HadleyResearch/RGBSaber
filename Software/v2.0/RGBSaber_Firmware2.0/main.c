@@ -10,16 +10,30 @@
 #include "constants.h"
 #include "globals.h"
 //Global Function Declarations
-void T0Interrupt();     //Timer0 interrupt service routine
-void Initialize18f2221();      //Microcontroller device initializations
-void ToggleColor();     //Used to adjust color state
-void ReadColorPort();   //Initiates A/D conversions on active color port
-void SoftwarePwm();     //Run Software PWM on color ports
+void T0Interrupt();         //Timer0 interrupt service routine
+void Initialize18f2221();   //Microcontroller device initializations
+
+void ToggleColor();         //Used to adjust color state
+void ReadColorPort();       //Initiates A/D conversions on active color port
+void SoftwarePwm();         //Run Software PWM on color ports
+
+//void IndicateColor();
+//void ShiftColor();
+//void FlashIndicate();
+
+//void ResetCounter();
+//void TimeoutCheck();
+//void PowerDown();
+
 
 void main(void) {
     Initialize18f2221();
     while(1) {
-
+        if(colorPb) {
+            ToggleColor();
+        }
+        ReadColorPort();
+        SoftwarePwm();
     }
     return;
 }
@@ -28,10 +42,32 @@ void main(void) {
  * Function: T0Interrupt()
  * Description: Timer0 Overflow Interrupt
  * Notes:
+ *   1) IMPORTANT: Clear TMR0IF within the interrupt to prevent immediate
+ *          re-entry into the interrupt
+ *   2) Switches are momentary contacts to ground, thus a 0 indicates switch
+ *          is/was pressed and a 1 indicates switch isn't/wasn't pressed
  * Version: 0.0
  * Last Modified: 12-15-2010
  */
+#pragma interruptlow T0Interrupt
 void T0Interrupt() {
+    INTCONbits.TMR0IF = 0;
+    //Button debouncing code: Test for falling edge of color signal
+    if(!regColorSelect) {
+        //Color selector is currently pressed
+        if(colorPbPrev) {
+            //Color selector active since last interrupt (switch held down)
+            colorPb = 0;
+            colorPbPrev = 1;
+        }
+        //Transition, indicate colorPb press
+        colorPb = 1;
+        colorPbPrev = 1;
+    } else {
+        //Color Selector not currently pressed, thus clear flags
+        colorPb = 0;
+        colorPbPrev = 0;
+    }
     return;
 }
 
@@ -123,11 +159,14 @@ void ReadColorPort() {
     while(ADCON0bits.GO_NOT_DONE) { //Wait for AD conversion to finish
     }
     if(redFlag) {           //If red active, move AD result to previous red
-        redPrev = ADRESH;
+    //    redPrev = ADRESH;
+        red = ADRESH;
     } else if(greenFlag) {  //If green active, move AD result to previous green
-        greenPrev = ADRESH;
+    //    greenPrev = ADRESH;
+        green = ADRESH;
     } else if(blueFlag) {   //If blue active, move AD result to previous blue
-        bluePrev = ADRESH;
+    //    bluePrev = ADRESH;
+        blue = ADRESH;
     }
     return;
 }
