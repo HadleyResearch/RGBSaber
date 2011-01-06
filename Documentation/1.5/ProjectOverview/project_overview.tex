@@ -17,6 +17,7 @@
 \usepackage{float}
 \usepackage{subfig}
 \usepackage{tikz}
+\usepackage{fancyhdr}
 \usepackage{verbatim}
 \usepackage{kpfonts}
 \usepackage{fullpage}
@@ -25,6 +26,12 @@
 %Pathway to global documentation library functions
 %Modify to /path-to-documentation-templates/lbr
 \newcommand{\globallbr}{../lbr}
+
+%Page layout settings
+\setlength{\voffset}{-10pt}
+\setlength{\headsep}{20pt}
+\setlength{\headheight}{15pt}
+\setlength{\topmargin}{-20pt}
 
 \begin{comment}
   Hyperref settings: settings for the hyperref hyperlink package.
@@ -51,12 +58,28 @@
 \input{\globallbr/doc_header.tex}
 \input{\globallbr/aliases.tex}
 
+%Modify these to reflect your documentation
+\newcommand{\documentationtype}{Project Overview}
+\newcommand{\projectname}{RGBSaber }
+\newcommand{\projectversion}{1}
+
+%Header/Footer Definitions
+\pagestyle{fancy}
+\lhead{ }
+\chead{ }
+\rhead{\projectname  v\projectversion \documentationtype}
+\lfoot{\href{http://nbitwonder.com}{http://nbitwonder.com} }
+\cfoot{\thepage}
+\rfoot{\copyright 2011 NBitWonder, LLC }
+
 \begin{document}
-%Insert title page or header here
-\nbwheader{Project Overview}{ProjectName}{ProjectVersion}
+\thispagestyle{plain}
+% Insert title page or header here
+\nbwheader{\documentationtype}{\projectname}{\projectversion}
 
 %Uncomment to add Table of Contents to Project Overview
-%\tableofcontents
+\tableofcontents
+\newpage
 
 \section[Project Description]{Project Description}
 %	Section: Project Description

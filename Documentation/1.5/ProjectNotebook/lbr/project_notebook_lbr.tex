@@ -23,7 +23,6 @@
 \newcommand{\projnbtagline}[4]
 {
 \textbf{Entry:} #1 \textbf{Date:} #2 \textbf{Version:} #3 \textbf{Title:} #4
-\hfill
 }
 
 %Variable declarations: \nbentry environment
@@ -37,5 +36,5 @@
 %	Title is a short, descriptive title of the project entry
 
 \newenvironment{nbentry}[4]
-{\noindent\\\framebox{\projnbtagline{#1}{#2}{#3}{#4}}\\}
-{}
+{\noindent\framebox[\textwidth]{\projnbtagline{#1}{#2}{#3}{#4}\hfill}\hfill\newline\hfill\newline}
+{\hfill\newline}
