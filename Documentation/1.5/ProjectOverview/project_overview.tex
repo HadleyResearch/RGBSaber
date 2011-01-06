@@ -1,0 +1,103 @@
+% File: project_overview.tex
+% Description: TeX file to generate project overview template
+% Author: George Hadley
+% Website: http://nbitwonder.com
+% Notes:
+% 1) This document is written using the LaTeX typesetting language. For a beginner's
+%	guide to the LaTeX typesetting language, consult http://en.wikibooks.org/wiki/LaTeX
+% 2) This document needs to be compiled using pdfLaTeX. It is not compatible with pdfTeX 
+%	at the present time.
+% 3) This document utilizes the nbwheader function, located in the doc_header.tex file.
+%	This file is located at /path-to-documentation-templates/lbr/doc_header.tex.
+% Version: 0.1
+% Last Modified: 1-04-2010
+
+\documentclass[12pt,letterpaper,onecolumn]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{kpfonts}
+\usepackage{fullpage}
+\usepackage{hyperref}
+
+%Pathway to global documentation library functions
+%Modify to /path-to-documentation-templates/lbr
+\newcommand{\globallbr}{../lbr}
+
+\begin{comment}
+  Hyperref settings: settings for the hyperref hyperlink package.
+  For a more detailed listing of available settings, consult 
+  	http://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Customization
+
+  IMPORTANT: For your document, modify the pdftitle, pdfauthor, pdfsubject,
+	and pdfkeywords options to tailor to your document
+\end{comment}
+\hypersetup{
+	bookmarks=true, 					%Enable pdf bookmarks
+	pdfborder={0,0,0},					%Disable borders around links
+	pdftitle={Project Overview (template)},		%Name of PDF document
+	pdfauthor={George Hadley},				%Author of PDF document
+	pdfsubject={Embedded Electronics},		%Subject of PDF document
+	pdfkeywords={diy,electronics,nbitwonder},	%Keywords for PDF document
+	colorlinks={true},					%Enable colored links
+	linkcolor=red,						%Internal link color
+	citecolor=green,						%Citation link color
+	filecolor=blue,						%File link color
+	urlcolor=blue						%URL link color
+}
+
+\input{\globallbr/doc_header.tex}
+\input{\globallbr/aliases.tex}
+
+\begin{document}
+%Insert title page or header here
+\nbwheader{Project Overview}{ProjectName}{ProjectVersion}
+
+%Uncomment to add Table of Contents to Project Overview
+%\tableofcontents
+
+\section[Project Description]{Project Description}
+%	Section: Project Description
+%	Description: A brief description of what your project is and what
+%		it will be used for
+
+\section[Schematics]{Schematics and Block Diagrams}
+%	Section: Schematics and Block Diagrams
+%	Description: Include any relevant high level schematics and block
+%		diagrams in this section
+
+\section[Project Roadmap]{Project Roadmap}
+%	Section: Project Roadmap
+%	Description: Detail improvements and upgrades to be considered for
+%		future versions of the project
+
+\section[Project Analysis]{Project Analysis}
+%	Section: Project Analysis
+%	Description: Analysis of project compared to similar/competing
+%		projects, products, and patents. Divided into subsections
+%		(below)
+
+\subsection[Open Source]{Open Source Project Analysis}
+%	Subsection: Open Source Analysis
+%	Description: Analysis of project compared to similar open source
+%		projects.
+
+\subsection[Commercial]{Commercial Product Analysis}
+%	Subsection: Commercial Product Analysis
+%	Description: Analysis of project compared to similar commercial
+%		products
+
+\subsection[Patent]{Patent Analysis}
+%	Subsection: Patent Analysis
+%	Description: Analysis of project compared to existing patents
+
+\section[Sources Cited]{Sources Cited}
+%Section: Sources Cited
+%Description: Citations for all sources used within the document.
+%	Use of the IEEE citation style is highly recommended. For guidelines on using the IEEE citation style, 
+%	refer to:
+%	http://www.ieee.org/portal/cms_docs_iportals/iportals/publications/authors/transjnl/stylemanual.pdf
+
+\end{document}

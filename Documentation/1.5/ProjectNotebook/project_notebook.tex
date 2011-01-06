@@ -1,0 +1,184 @@
+% File: project_notebook.tex
+% Description: TeX file to generate Project Notebook (template)
+% Author: George Hadley
+% Website: http://nbitwonder.com
+% Notes:
+% 1) This document is written using the LaTeX typesetting language. For more information on
+%	LaTeX, consult http://en.wikibooks.org/wiki/LaTeX/
+% 2) This document needs to be compiled using pdfLaTeX. It is not supported with pdfTeX
+%	at the present time
+% 3) This document utilizes the \nbwheader command created in doc_header.tex. By default,
+%	this file is located at:
+%	/path-to-documentation-templates/lbr/doc_header.tex
+% 4) This document utilizes commands and environments created in projnb_lbr.tex. By default,
+%	this file is located at:
+%	/path-to-documentation-templates/lbr/projnb_lbr.tex
+% Version: 0.1
+% Last Modified: 1-04-2010
+\documentclass[12pt,letterpaper,onecolumn]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{kpfonts}
+\usepackage[cm]{fullpage}
+\usepackage{hyperref}
+
+%Page layout settings
+%\setlength{\marginparsep}{0pt}
+%\setlength{\textwidth}{450pt}
+%\setlength{\marginparwidth}{0pt}
+
+%Path to open documentation system global lbr directory
+%Set to /path-to-documentation-templates/lbr
+%\newcommand{\globallbr}{/Users/georgehadley/Documents/NBitWonder/IT/Tools/ProjectTemplates/lbr}
+\newcommand{\globallbr}{../lbr}
+
+\begin{comment}
+  Hyperref settings: settings for the hyperref hyperlink package.
+  For a more detailed listing of available settings, consult 
+  	http://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Customization
+
+  IMPORTANT: For your document, modify the pdftitle, pdfauthor, pdfsubject,
+	and pdfkeywords options to tailor to your document
+\end{comment}
+\hypersetup{
+	bookmarks=true, 					%Enable pdf bookmarks
+	pdfborder={0,0,0},					%Disable borders around links
+	pdftitle={Project Notebook (template)},		%Name of PDF document
+	pdfauthor={George Hadley},				%Author of PDF document
+	pdfsubject={Embedded Electronics},		%Subject of PDF document
+	pdfkeywords={diy,electronics,nbitwonder},	%Keywords for PDF document
+	colorlinks={true},					%Enable colored links
+	linkcolor=red,						%Internal link color
+	citecolor=green,						%Citation link color
+	filecolor=blue,						%File link color
+	urlcolor=blue						%URL link color
+}
+\input{\globallbr/doc_header.tex}
+\input{\globallbr/aliases.tex}
+\input{./lbr/project_notebook_lbr.tex}
+
+\begin{document}
+% Insert title page or header here
+\nbwheader{Project Notebook}{RGBSaber}{1}
+\\
+% Insert optional project index here
+% For long projects, it is recommended that project entries be indexed
+%	by entry, week, month, or year (or a combination of the above)
+
+% Project Notebook entries
+% Project Notebook entries should be enclosed in boxes and contain a tagline
+%	detailing the entry number, date, revision (project minor version), and 
+%	a short, descriptive title
+\begin{nbentry}{001}{8/22/2010}{1.4}{RGBSaber v1.5 Redesign}
+\\	This past weekend I once again attempted to construct the RGB Lightsaber, using the chassis I had ordered from the Custom Saber Shop. Unfortunately, an unknown internal short occurred within this lightsaber, destroying the control board. This and other problems have forced me to redesign the RGB driver board, resulting in RGBSaber v1.5. A list of changes to be made in v1.5 include the following:
+\begin{enumerate}
+\item Change power source from 6-AA NiMH batteries to 2-cell 7.4V Li-Ion pack. In making this change, undervoltage protection must be included in Li-Ion pack to prevent damage to the batteries.
+\item Flip power converter unit to top-side of the board. The lithium ion protection circuitry may be placed on the bottom of the board.
+\item Move RGB led connector from top edge of board to the right side of the board to ease connection issues.
+\item Use connectors for all interfaces, to maximize reuse and increase reliability (solder makes for poor electrical connections).
+\item Minimize wiring inside of lightsaber chassis. Try to limit wire lengths to 3 inches or less.
+\end{enumerate}
+\end{nbentry}
+
+\begin{nbentry}{002}{8/26/2010}{1.5}{RGBSaber v1.5 Connectors}
+\\
+	Today I am performing redesign work on the RGB Lightsaber, designing and laying out RGBSaber v1.5. In order to get the saber up and running, reliable connectors are required for the design. As such, today's entry details the search for good connectors to use on the RGB Lightsaber project.
+	To begin the search, I went to \href{http://www.molex.com/}{Molex} and began looking at the connector options they had, with hopes of getting free samples of some of the connectors. Promising connectors included the PicoBlade connectors for the peripheral board connection. Unfortunately, after additional searching, it was determined that the crimping tools needed for the PicoBlade connectors were prohibitively expensive (hundreds of dollars) and cable subassemblies did not appear to be available.
+\end{nbentry}
+
+\begin{nbentry}{003}{8/27/2010}{1.5}{RGBSaber v1.5 Undervolt Protection}
+\\
+	Following yesterday's connector search, I continued the search for reliable, feasible connectors to use for the RGBSaber project. Leaving Molex and looking for connector possibilities over at \href{http://tycoelectronics.com}{Tyco Electronics}, I found some additional promising possibilities. Particularly promising were the \href{http://www.tycoelectronics.com/catalog/feat/en/c/11398?BML=10576,17560,23645,17587}{Micro-MaTch} and \href{http://www.tycoelectronics.com/catalog/feat/en/s/23478?BML=10576,17560,23645,17587}{MTA100} connectors. More promising still, a crimping tool was available for these connectors at a very reasonable price of \$18.
+	Having found a reasonable connector option for the board, I proceded to investigate undervoltage protection options for the lightsaber power circuitry. In order to meet acceptable size requirements, v1.5 of the RGBSaber circuitry is to be powered by a 2-cell 7.4V Li-Ion battery pack. To prevent damage to the Li-Ion pack, a simple analog circuit will be designed to kill power to the circuit in the event that the battery pack voltage drops below 5.6V (signifying an undervoltage condition).
+\end{nbentry}
+
+\begin{nbentry}{004}{9/01/2010}{1.5}{RGBSaber v1.5 Undervoltage Protection 2}
+\\
+	Research continued on the Li-Ion undervoltage protection circuit. Comparator circuits were investigated for their use within the RGBSaber control circuit. I was hoping to utilize a comparator with an integrated voltage reference, however, these were shown to be prohibitively expensive. Therefore, a general purpose comparator will be used, with a zener diode providing a reliable onboard voltage reference.
+\end{nbentry}
+
+\begin{nbentry}{005}{9/01/2010}{1.5}{RGBSaber v1.5 Battery Pack Research}
+\\
+	Further research on the lithium ion battery packs revealed that lithium ion packs can be purchased which incorporate integrated circuitry protection, negating the need for onboard circuitry protection on the lightsaber board. After some research, \href{http://www.batteryjunction.com/tenergy-18650-2200-pk.html}{this battery pack}, found at \href{http://www.batteryjunction.com/}{BatteryJunction}, showed particular promise for use in the RGB lightsaber.
+	Given that the new Li-Ion pack incorporates integrated protection circuitry, no schematic redesigns appear to be necessary to implement v1.5. The battery pack and associated \href{http://www.batteryjunction.com/unsmchforlib.html}{Li-Ion charger} were ordered for use in the RGB Lightsaber design.
+\end{nbentry}
+
+\begin{nbentry}{006}{9/3/2010}{1.5}{RGBSaber v1.5}
+\\
+	Having some free time to spare, I redesigned the layout of the RGB lightsaber, creating the RGBSaber v1.5 board. Changes made to the new version of the PCB include rotating the onboard primary decoupling capacitor, flipping the voltage regulator to the top side of the board, and moving the LED connector to the front of the board for easier access to the LED within the lightsaber chassis. I ran the design through Eagle's built in DRC, but will submit it to peer review by one or more ECE friends before ordering.
+\end{nbentry}
+
+\begin{nbentry}{007}{9/05/2010}{1.5}{RGBSaber v1.5 Parts/PCB Ordering}
+\\
+	Today I ordered parts to construct RGBSaber v1.5. Additionally, I added some finishing touches to the RGBSaber v1.5 PCB, such as fixing some ground plane isolation issues and tenting all the vias on the board, which had been suggested by Ben. With those changes implemented, I panelized the control board and an older version of the peripheral board, and ordered these boards from \href{http://www.4pcb.com}{Advanced Circuits}.
+\end{nbentry}
+
+\begin{nbentry}{008}{9/11/2010}{1.5}{RGBSaber Chassis Plans}
+\\
+	I finally opened the parts I had ordered from DigiKey from DigiKey only to discover that the Li-Ion battery pack I had ordered was ever so slightly too wide to fit inside of the nice MHS main body tube I had ordered from the Custom Saber Shop. As luck would have it, however, the Li-Ion pack was just barely able to fit inside the 1.5" sink tube that I had been using for the original RGB lightsaber chassis. I ordered a pair of sink tube to MHS adapters from the Custom Saber Shop to try to utilize this quality. After doing so, however, I discovered that the sink tube fits over the outside of the MHS tube. Therefore, the current plan is to use the MHS hilt as the core of the saver build and then extend the hilt as needed with some 12" sink tube.
+\end{nbentry}
+
+\begin{nbentry}{009}{9/17/2010}{1.5}{RGBSaber v1.5 Failure}
+\\	RGBSaber v1.5 PCBs arrived today, and, in what has become troublingly predictable, the v1.5 prototype contained several imperfections, and, among other things, does not function properly. The cause of this is at this time unknown. v1.6 will doubtlessly be created, but, in the meantime, here is a list of issues and mistakes made in building v1.5:
+\begin{enumerate}
+\item Tyco MTA100 connectors obscure the silkscreens on the busses they are associated with. \\
+	Solution: Add silkscreens to the bottom of the board.
+\item Switching transistors have very thin wire supplying power from the microcontroller. \\
+	Solution: Reroute board to supply direct power mains to switching transistors, add power line audits to PCB design check.
+\item Battery header, program header, and DC/DC converter are spaced too close together. \\
+	Solution: no solution proposed at present time.
+\item Standoff hole near batter header is partially obscured by battery header. \\
+	Solution: Add spacing around left side standoff holes
+\item Resistors Under DC/DC converter need to be centered to provide more balance
+\item Resistors/Capacitors should be standardized to smaller part size (0805 or 0603)
+\item Consider relocating resistors beneath DC/DC converter to underside of board
+\end{enumerate}
+	In spite of the unfortunate outcome of the RGBSaber v1.5 board, a few good things did come of it. In particular, I now have the tools and materials to implement connectors on my board, which is so useful I think I will mandate it for all multi-board projects. Additionally, the creation of RGBSaber v1.5 facilitated the development of the Microsoft Word project notebook template, which has been quite helpful in documenting work on the RGB lightsaber project.
+\end{nbentry}
+
+\begin{nbentry}{010}{10/11/2010}{1.5}{RGBSaber build progress update}
+\\	It's been quite awhile since I have documented the state of the RGBSaber project, largely because there hasn't been much to report in the way of actual development work of the circuit boards. After troubleshooting the first RGBSaber board I constructed a second board, fixing the power wiring to the transistors problem (outlined above). Upon doing so, the RGBSaber v1.5 board worked correctly and demonstrated all current functionality. Thereafter, I constructed the first fully operational RGBSaber model, and have been working slowly on documenting the complete build process for RGBSaber v1.5.
+\end{nbentry}
+
+\begin{nbentry}{011}{10/11/2010}{1.5}{RGBSaber power electronics failure}
+\\	I took the RGBSaber over to Eric Lauber's house to demonstrate its functionality today. It worked for a little while, and then broke mysteriously. After careful diagnostic work of the RGBSaber, it has been determined that the control electronics of the RGBSaber were not the source of the failure, but rather some as-of-yet unidentified issue with the device power supply. Taking a voltage reading of the battery voltage through the charge port jack yielded very low voltage values (~0.125V) and a resistance measurement of the power jack suggested that no internal shorts were occurring between power and ground. In light of this information, the only current suspect for the RGBSaber failure is a broken or faulty wire within the RGBSaber. More diagnostic work will be done on the saber to try to determine the source of the problem. \\
+	In the meantime, however, RGBSaber v1.5 is our of the hilt, providing me with an opportunity to look into streamlining and developing RGBSaber v1.6, planned to be the last revision of RGBSaber v1, which will feature many improvements to the RGBSaber control electronics. Among these are: \\ \\
+\underline{RGBSaber\_Control:}
+\begin{enumerate}
+\item Use of SMD decoupling capacitor
+\item Move to 0805 resistors and capacitors
+\item More powerful drive transistors
+\item Better DC/DC converter placement (resistors currently under DC/DC Converter)
+\item Improved peripheral electronics interface to allow more durable discrete elements to be used with RGBSaber instead of just peripheral board.
+\item Move to JST or other small connectors instead of MTA-100 connectors
+\item Interface for second pushbutton
+\end{enumerate}
+
+\underline{RGBSaber\_Periph:}
+\begin{enumerate}
+\item Use of SMD RGB indicator LED
+\item JST or other smaller connector to replace MTA100 connector
+\item Surface mount connector
+\item Revert to 2 pushbutton system
+\item More durable pushbuttons
+\end{enumerate}
+\end{nbentry}
+
+\begin{nbentry}{012}{12/09/2010}{1.6}{RGBSaber Firmware v1.6, v2.0 C port}
+\\	I spent some more time working on the RGBSaber project today. RGBSaber\_Control is now at version 1.6 proper, with a silkscreened NBitWonder logo having been applied to the PCB in addition to some other fixes mentioned above. Additionally, Microchip finally released C18 (still in Beta) for their MPLABX platform, meaning I can finally do firmware development on Mac OSX. As such, I have begun the code port for RGBSaber in C.
+\end{nbentry}
+
+\begin{nbentry}{013}{12/15/2010}{1.6}{RGBSaber Firmware v2.0 C Code Completed}
+\\	I spent some time today working on the C device code for the RGBSaber project, and, I can say with pride that an initial port of the core functionality has been completed. It builds successfully, although a successful embedded test has not occurred at the present time.
+\end{nbentry}
+
+% Sources Cited
+% Add a section detailing all external source citations. The IEEE citation
+%	style is recommended. For guidelines on using the IEEE citation style,
+%	refer to
+%   http://www.ieee.org/portal/cms_docs_iportals/iportals/publications/authors/transjnl/stylemanual.pdf
+
+\end{document}
