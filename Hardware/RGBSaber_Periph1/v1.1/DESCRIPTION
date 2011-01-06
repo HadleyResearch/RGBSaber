@@ -1,0 +1,6 @@
+<language en>
+Peripheral board (style 1) for tricolor lightsaber v1.2. 
+
+Changes from v1.1:    
+1) Redesigned to utilize different RGB indicator led package
+</language en>
