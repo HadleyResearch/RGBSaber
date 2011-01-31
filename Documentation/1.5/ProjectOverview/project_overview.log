@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.4)  6 JAN 2011 13:17
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.4)  6 JAN 2011 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1042,7 +1042,7 @@ LaTeX Info: Redefining \nameref on input line 75.
 \openout4 = `project_overview.out'.
 
 
-<../lbr/img/NBitWonderLogo_wTm.png, id=40, 1806.75pt x 263.48438pt>
+<../lbr/img/NBitWonderLogo_wTm.png, id=56, 1806.75pt x 263.48438pt>
 File: ../lbr/img/NBitWonderLogo_wTm.png Graphic file (type png)
 
 <use ../lbr/img/NBitWonderLogo_wTm.png>
@@ -1078,36 +1078,39 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../lbr/
 img/NBitWonderLogo_wTm.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-LaTeX Font Info:    Try loading font information for TS1+jkp on input line 126.
+LaTeX Font Info:    Try loading font information for TS1+jkp on input line 137.
 
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
 ) [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
 
 (./project_overview.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
 Package rerunfilecheck Info: File `project_overview.out' has not changed.
-(rerunfilecheck)             Checksum: 1BC435B63DC9380F4B8E912CA74E7E38;422.
+(rerunfilecheck)             Checksum: CFDE3A372873FE507EE262984FE0F32B;699.
  ) 
 Here is how much of TeX's memory you used:
- 16400 strings out of 493738
- 287341 string characters out of 3143024
- 340306 words of memory out of 3000000
- 19323 multiletter control sequences out of 15000+200000
+ 16416 strings out of 493738
+ 287555 string characters out of 3143024
+ 344306 words of memory out of 3000000
+ 19329 multiletter control sequences out of 15000+200000
  25327 words of font info for 60 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 56i,11n,55p,427b,1052s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+ 56i,11n,55p,457b,1052s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.en
+c}{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texli
 ve/2010/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb>
-Output written on project_overview.pdf (2 pages, 326705 bytes).
+010/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2010/t
+exmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb>
+Output written on project_overview.pdf (3 pages, 338748 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

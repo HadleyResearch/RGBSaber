@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.4)  4 JAN 2011 18:24
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.1.4)  9 JAN 2011 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,11 +884,7 @@ Package hyperref Warning: Invalid value `0,0,0'
 (hyperref)                Option setting is ignored on input line 44.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 44.
-
-(/Users/georgehadley/Documents/NBitWonder/IT/ProjectTemplates/lbr/doc_header.te
-x)
-(/Users/georgehadley/Documents/NBitWonder/IT/ProjectTemplates/lbr/aliases.tex)
-(./bill_of_materials.aux)
+(../lbr/doc_header.tex) (../lbr/aliases.tex) (./bill_of_materials.aux)
 \openout1 = `bill_of_materials.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 49.
@@ -1017,38 +1013,154 @@ LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 50.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 
-Overfull \hbox (3.68939pt too wide) in paragraph at lines 58--64
- [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[][][]\OT1/jkp/m/n/12 PIC18F2221-I/SS-
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 90--90
+[][][]\OT1/jkp/m/n/12 Murata Power So-lu-
+ []
+
+
+Underfull \hbox (badness 7832) in paragraph at lines 226--226
+[]\OT1/jkp/m/n/12 Decoupling Ca-pac-i-
+ []
+
+
+Underfull \hbox (badness 7832) in paragraph at lines 244--244
+[]\OT1/jkp/m/n/12 Decoupling Ca-pac-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
+[]\OT1/jkp/m/n/12 Programming
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+[]\OT1/jkp/m/n/12 Peripheral Board
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--502
+[]\OT1/jkp/m/n/12 Ribbon Ca-ble 28
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+[]\OT1/jkp/m/n/12 Peripheral Ca-ble
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 573--573
+[]\OT1/jkp/m/n/12 7.4V Li-Ion Bat-tery
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--590
+[]\OT1/jkp/m/n/12 2.1mm DC Bar-rel
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 660--660
+[]\OT1/jkp/m/n/12 Luxeon LED: Royal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]\OT1/jkp/m/n/12 Carclo Tri-Lens
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+[]\OT1/jkp/m/n/12 Carclo Per-for-mance
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 715.
+
+Overfull \hbox (33.36737pt too wide) in paragraph at lines 58--715
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--715
+
+ []
+
+
+Overfull \hbox (8.6477pt too wide) in paragraph at lines 58--715
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--715
+
+ []
+
+
+Overfull \hbox (8.6477pt too wide) in paragraph at lines 58--715
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--715
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--715
+
+ []
+
+
+Overfull \hbox (12.82991pt too wide) in paragraph at lines 58--715
+[] 
  []
 
 [1
 
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../lbr/
-img/NBitWonderLogo_wTm.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+img/NBitWonderLogo_wTm.png>] [2] [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 715.
  (./bill_of_materials.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 715.
 Package rerunfilecheck Info: File `bill_of_materials.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15114 strings out of 493738
- 266086 string characters out of 3143024
- 312946 words of memory out of 3000000
+ 15116 strings out of 493738
+ 265808 string characters out of 3143024
+ 348771 words of memory out of 3000000
  18077 multiletter control sequences out of 15000+200000
  19023 words of font info for 50 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  56i,9n,55p,428b,1052s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/local/texli
-ve/2010/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb>
-Output written on bill_of_materials.pdf (1 page, 321976 bytes).
+ve/2010/texmf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/local/texlive/201
+0/texmf-dist/fonts/type1/public/kpfonts/jkpmia.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2010/texmf-d
+ist/fonts/type1/public/kpfonts/jkpmsc8a.pfb>
+Output written on bill_of_materials.pdf (3 pages, 343827 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
+ 66 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
