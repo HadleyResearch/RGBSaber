@@ -9,4 +9,3 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Sparkfun}{3}{subsubsection.4.2.1}
 \contentsline {subsection}{\numberline {4.3}Plecter Labs}{3}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Patent}{3}{subsection.4.4}
-\contentsline {section}{\numberline {5}Sources Cited}{3}{section.5}
