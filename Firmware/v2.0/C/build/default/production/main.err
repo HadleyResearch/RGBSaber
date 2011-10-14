@@ -1,0 +1,4 @@
+main.c:30:Warning [2058] call of function without prototype
+main.c:33:Warning [2058] call of function without prototype
+main.c:35:Warning [2058] call of function without prototype
+main.c:36:Warning [2058] call of function without prototype

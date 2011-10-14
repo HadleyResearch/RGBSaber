@@ -1,32 +1,30 @@
-Overview:
-	This directory contains project documentation templates to help document and
-create high-quality open source projects. The templates are tailored toward 
-embedded hardware and software projects. NBitWonder's documentation system
-follows the guidelines written in our documentation tutorial, which can be
-found at:
+File: README.txt
+Description: Project-specific instructions and information concerning files
+    located within this hierarchy and subhierarchies. In the event of
+    conflicts, the lowest-level README.txt file is used for information
+    regarding a file or files.
+            
+Current Location: RGBSaber/Documentation
+
+    NBitWonder's open documentation system follows the guidelines written 
+in our documentation tutorial, which can be found at:
 	 http://nbitwonder.com/2010/11/09/becoming-a-better-maker-documentation/
 
-Document templates included are:
+Documents included are:
 	1)  Project Overview
 	2)  Project Notebook
-	3)  Version Tracker
-	4)  Bug Tracker
-	5)  Theory of Operation
-	6)  Bill of Materials (BOM)
-	7)  Construction Guide
-	8)  Testing Plan and Results
-	9)  User Manual
-
-	All documentation is provided in TeX format. For a good tutorial on LaTeX,
-see http://en.wikibooks.org/wiki/LaTeX/Absolute_Beginners
-
+	3)  Theory of Operation
+	4)  Bill of Materials (BOM)
+	5)  Construction Guide
+	6)  User Manual
+    
 License:
-	All documentation TEMPLATES are provided under the GNU GPL v3.0. You are
-free to use and modify the templates to suit any and every need you might have
-(we would prefer that you would let us know so that we can post about it on our
-site, or at least link to our site in any online write-ups that you do).
-	While you have complete control over the templates and their use, all
-DOCUMENTATION produced by NBitWonder is the copyright of NBitWonder. In
-addition, NBitWonder and the NBitWonder logo are trademarks of NBitWonder, and
-their use is strictly prohibited except by express written permission from 
-NBitWonder, LLC.
+	All macros and documentation templates are provided under the GNU GPL 
+v3.0. A full copy of the GNU GPL v3.0 can be found at: 
+    http://www.gnu.org/copyleft/gpl.html
+    Additionally, a copy of the GNU GPL v3.0 should be included in the file
+license.txt.
+	All documentation produced by NBitWonder is the copyright of NBitWonder.
+In addition, NBitWonder and the NBitWonder logo are trademarks of NBitWonder
+and their use is strictly prohibited except by express written permission 
+from NBitWonder, LLC.
